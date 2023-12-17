@@ -4,13 +4,26 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={styles.body_container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Calendar</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <div className={styles.nav_container}>
+        <div className={styles.nav_box}></div>
+        <div className={styles.nav_box}></div>
+      </div>
+
+      <div className={styles.dash_container}>
+        <div className={styles.menu_pane}>
+          <h2 className={styles.title}>Menu</h2>
+        </div>
+        <div className={styles.dash_pane}>
+          <h1 className={styles.title}>Dashboard</h1>
+        </div>
+        </div>
+      {/* <main>
         <h1 className={styles.title}>
         Read <Link href="/posts/first-post">this page!</Link>
         </h1>
@@ -59,7 +72,7 @@ export default function Home() {
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
         </a>
-      </footer>
+      </footer> */}
 
       <style jsx>{`
         main {
