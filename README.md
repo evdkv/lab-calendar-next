@@ -1,1 +1,5 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# Lab Calendar App
+
+A full-stack calendar app for tracking lab testing schedules. Built in Next.js.
+
+Project in Progress.
