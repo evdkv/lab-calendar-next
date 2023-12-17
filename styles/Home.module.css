@@ -1,6 +1,7 @@
 .body_container {
   min-height: 100vh;
   display: flex;
+  padding: 0.5vw;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
@@ -10,8 +11,14 @@
   min-height: 6vh;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 1vh;
+}
+
+.nav_options {
+  display: flex;
+  flex-direction: row;
 }
 
 .dash_container {
@@ -23,12 +30,30 @@
 }
 
 .nav_box {
-  min-height: 3rem;
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 7rem;
   margin: 0 0.1rem;
-
-  border: 1px solid #eaeaea;
+  border: 1px solid #b9b8b8;
+  color: #9a9a9a;
   border-radius: 10px;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.nav_box p {
+  padding: 0.2rem;
+}
+
+.nav_box:hover,
+.nav_box:focus,
+.nav_box:active {
+  color: #598E89;
+  border-color: #598E89;
+  border-width: 2px;
 }
 
 .menu_pane {

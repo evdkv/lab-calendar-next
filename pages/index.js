@@ -1,26 +1,35 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
+import SignInButton from '../components/signinBtn';
 
 export default function Home() {
   return (
     <div className={styles.body_container}>
       <Head>
-        <title>Calendar</title>
+        <title>Robbins Lab</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={styles.nav_container}>
-        <div className={styles.nav_box}></div>
-        <div className={styles.nav_box}></div>
+      <div className={styles.nav_options}>
+          <Image
+            src="/rlab.png"
+            width={70}
+            height={50}
+          />
+          <h6 className={styles.title}>Robbins Lab</h6>
+      </div>
+        <SignInButton />
       </div>
 
       <div className={styles.dash_container}>
         <div className={styles.menu_pane}>
-          <h2 className={styles.title}>Menu</h2>
+          <p className={styles.title}>Menu</p>
         </div>
         <div className={styles.dash_pane}>
-          <h1 className={styles.title}>Dashboard</h1>
+          <p className={styles.title}>Dashboard</p>
         </div>
         </div>
       {/* <main>
