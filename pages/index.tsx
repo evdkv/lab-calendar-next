@@ -12,17 +12,22 @@ import { Card, CardHeader, CardBody, CardFooter, Divider } from "@nextui-org/rea
 export default function IndexPage() {
 	return (
 		<DefaultLayout>
-			<section className="flex flex-row items-center justify-center gap-3 py-8 md:py-10">
+			<section className="flex flex-row items-center justify-center gap-3 py-8 md:py-1">
 				<Card className="w-[20vw] h-[90vh]">
-					<CardBody className="gap-4">
+					<CardHeader>
 						<h3 className="text-2xl">Menu</h3>
+					</CardHeader>
+					<CardBody className="gap-4">
 						<UserMenu />
 					</CardBody>
-					<Divider />
 					<CardFooter>made with 💙 by <Link isExternal href="https://evdkv.cc/?utm_medium=rlab_calendar"> evdkv</Link>  </CardFooter>
 				</Card>
 				<Card className="w-[80vw] h-[90vh]">
-					<CardBody><h3 className="text-2xl">Dashboard</h3></CardBody>
+					<CardHeader>
+						<h3 className="text-2xl">Dashboard</h3>
+					</CardHeader>
+					<CardBody>
+					</CardBody>
 				</Card>
 				
 				{/* <div className="inline-block max-w-lg text-center justify-center">
