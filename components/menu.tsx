@@ -1,5 +1,5 @@
 import React from "react";
-import {Button} from "@nextui-org/react";
+import {Button, Tab, Tabs, Card, CardBody, CardHeader} from "@nextui-org/react";
 
 export const UserMenu = () => {
     return (

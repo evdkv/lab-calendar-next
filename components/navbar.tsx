@@ -14,6 +14,7 @@ import {
 } from "@nextui-org/react";
 
 import { link as linkStyles } from "@nextui-org/theme";
+import { HeaderButtons } from "./accountbtns";
 
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
@@ -52,7 +53,7 @@ export const Navbar = () => {
 	// );
 
 	return (
-		<NextUINavbar maxWidth="full" position="static">
+		<NextUINavbar maxWidth="full" position="static" background-color="transparent">
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
@@ -79,26 +80,9 @@ export const Navbar = () => {
 			</NavbarContent>
 
       <NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="end">
-				{/* <NavbarItem className="hidden sm:flex gap-2">
-					<Link isExternal href={siteConfig.links.twitter}>
-						<TwitterIcon className="text-default-500" />
-					</Link>
-					<Link isExternal href={siteConfig.links.discord}>
-						<DiscordIcon className="text-default-500" />
-					</Link>
-					<Link isExternal href={siteConfig.links.github}>
-						<GithubIcon className="text-default-500" />
-					</Link>
-					<ThemeSwitch />
-				</NavbarItem> */}
-				{/* <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem> */}
-				<NavbarItem className="hidden md:flex">
-					<Button
-						className="text-sm font-normal text-default-600 bg-default-100"
-						variant="flat"
-					>
-						Sign In
-					</Button>
+				<NavbarItem>
+					{/* SIGNIN BTN STUFF */}
+					<HeaderButtons />
 				</NavbarItem>
 			</NavbarContent>
 			<ThemeSwitch />
