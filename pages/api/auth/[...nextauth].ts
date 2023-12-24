@@ -4,6 +4,9 @@ import vercelPostgresAdapter from "@/lib/vercelPostgresAdapter";
 
 export const authOptions = {
   debug: true,
+  pages: {  
+    signIn: "/auth/signin",
+  },
   secret: process.env.NEXT_AUTH as string,
   adapter: vercelPostgresAdapter(),
   providers: [
