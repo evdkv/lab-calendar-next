@@ -1,6 +1,4 @@
 import { Link } from "@nextui-org/link";
-import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
 import DefaultLayout from "@/layouts/default";
 import { UserMenu } from "@/components/menu";
 import { Calendar } from "@/components/calendar";
@@ -17,7 +15,12 @@ export default function IndexPage() {
 					<CardBody className="gap-4">
 						<UserMenu />
 					</CardBody>
-					<CardFooter>made with 💙 by <Link isExternal href="https://evdkv.cc/?utm_medium=rlab_calendar"> evdkv</Link>  </CardFooter>
+					<CardFooter>
+						<p className="text-xs">
+							made with 💙 by <Link isExternal href="https://evdkv.cc/?utm_medium=rlab_calendar"> <p className="text-xs">evdkv</p></Link> 
+						</p> 
+						</CardFooter>
+
 				</Card>
 				<Card className="w-[80vw] h-[90vh]">
 					<CardHeader>

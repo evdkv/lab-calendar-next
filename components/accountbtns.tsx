@@ -1,6 +1,5 @@
 import {
   Button,
-  Card,
   Popover,
   PopoverTrigger,
   PopoverContent,
@@ -11,7 +10,6 @@ import {
 
 import { AccountIcon } from "./icons";
 import { useSession, signOut, signIn } from "next-auth/react";
-import Link from "@nextui-org/react";
 
 export const SignInButton = () => {
   return (
@@ -52,9 +50,6 @@ export const AccountButton = () => {
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[240px] items-start">
-        {/* <p className="text-small font-bold">
-              Account
-            </p> */}
         <div className="flex flex-row justify-between w-full mt-2">
           <p className="text-xl">{session?.user?.name ?? ""}</p>
           <Avatar radius="full" size="lg" src={session?.user?.image ?? ""} />
