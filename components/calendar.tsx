@@ -107,18 +107,18 @@ export const CalendarTable = () => {
 };
 
 export const Calendar = () => {
-    const { data: session, status } = useSession();
+  const { data: session, status } = useSession();
 
-    if (status === "authenticated") {
-        return <CalendarTable />;
+  if (status === "authenticated") {
+    return <CalendarTable />;
+  }
 
-    }
-
-    return (
-        <div className="flex flex-col justify-center items-center gap-4">
-            <p className="text-2xl">Hey there! Please sign in to view your dashboard.</p>
-            <SignInButton />
-        </div>
-    );
-
+  return (
+    <div className="flex flex-col justify-center items-center gap-4">
+      <p className="text-2xl">
+        Hey there! Please sign in to view your dashboard.
+      </p>
+      <SignInButton />
+    </div>
+  );
 };

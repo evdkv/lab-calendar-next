@@ -80,16 +80,14 @@ export const HeaderButtons = () => {
         </div>
       );
     } else if (status === "loading") {
-        return (
-            <Button className="w-[13vw]">
-            <Skeleton className="h-3/5 w-4/5 rounded-lg">
-                <div className="h-1 rounded-lg bg-default-300"></div>
-            </Skeleton>
-            </Button>
-          );
+      return (
+        <Button className="w-[13vw]">
+          <Skeleton className="h-3/5 w-4/5 rounded-lg">
+            <div className="h-1 rounded-lg bg-default-300"></div>
+          </Skeleton>
+        </Button>
+      );
     }
     return <SignInButton />;
   }
-
-
 };
