@@ -57,11 +57,11 @@ export const AccountButton = () => {
             </p> */}
         <div className="flex flex-row justify-between w-full mt-2">
           <p className="text-xl">{session?.user?.name ?? ""}</p>
-          <Avatar size="lg" src={session?.user?.image ?? ""} />
+          <Avatar radius="full" size="lg" src={session?.user?.image ?? ""} />
         </div>
         <p className="text-small">{session?.user?.email ?? ""}</p>
         <div className="flex flex-row justify-start w-full mt-2 gap-1">
-          <Chip size="sm" color="success" variant="dot">
+          <Chip size="sm" color="primary" variant="dot">
             Member
           </Chip>
           <Chip size="sm" color="success" variant="shadow">
