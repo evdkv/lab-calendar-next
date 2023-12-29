@@ -26,9 +26,10 @@ export default function IndexPage() {
               <Link
                 isExternal
                 href="https://evdkv.cc/?utm_medium=rlab_calendar"
+                className="text-xs"
               >
                 {" "}
-                <p className="text-xs">evdkv</p>
+               evdkv
               </Link>
             </p>
           </CardFooter>
