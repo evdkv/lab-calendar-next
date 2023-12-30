@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar";
 import { Head } from "./head";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function DefaultLayout({
 	children,
@@ -13,6 +14,7 @@ export default function DefaultLayout({
 			<main className="container mx-auto max-w-7xl px-6 flex-grow">
 				{children}
 			</main>
+			<SpeedInsights />
 		</div>
 	);
 }
